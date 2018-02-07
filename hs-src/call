@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Path to LLVM (this is the default when installing via `brew`)
+export PATH=/usr/local/opt/llvm@5/bin:$PATH
+# Path to Cross-target GHCs
+export PATH=$HOME/.mobile-haskell/ghc-x86_64-apple-ios/bin:$PATH
+export PATH=$HOME/.mobile-haskell/ghc-aarch64-apple-ios/bin:$PATH
+export PATH=$HOME/.mobile-haskell/ghc-x86_64-apple-darwin/bin:$PATH
+# Path to tools.
+export PATH=$HOME/.mobile-haskell/toolchain-wrapper:$PATH
+export PATH=$HOME/.mobile-haskell/head.hackage/scripts:$PATH
+# Path to Cabal HEAD binary.
+export PATH=$HOME/.cabal/bin:$PATH
+
+# Pass everything as the command to call.
+$@

@@ -1,0 +1,17 @@
+name:                MobileFun
+version:             0.1.0.0
+license:             BSD3
+license-file:        LICENSE
+author:              Your Name
+maintainer:          email@example.com
+copyright:           Your Name
+category:            Miscellaneous
+build-type:          Simple
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     Lib
+  build-depends:       base >= 4.7 && < 5
+                     , freer-simple
+  default-language:    Haskell2010
