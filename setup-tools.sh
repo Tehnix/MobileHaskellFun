@@ -28,25 +28,25 @@ cd ~/.mobile-haskell
 git clone git@github.com:zw3rk/toolchain-wrapper.git
 cd toolchain-wrapper && ./bootstrap
 
-# Set up libffi for our targets.
+# Set up libffi for our targets (Currently disabled, uncomment if needed).
 cd ~/.mobile-haskell
-mkdir -p lffi
-git clone https://github.com/zw3rk/libffi.git
-cd libffi
-./autogen.sh
-CC="$HOME/.mobile-haskell/toolchain-wrapper/aarch64-apple-ios-clang" \
-CXX="$HOME/.mobile-haskell/toolchain-wrapper/aarch64-apple-ios-clang" \
-        ./configure \
-        --prefix=$HOME/.mobile-haskell/lffi/aarch64-apple-ios \
-        --host=aarch64-apple-ios \
-        --enable-static=yes --enable-shared=yes
-make && make install
-git clean -f -x -d
-./autogen.sh
-CC="$HOME/.mobile-haskell/toolchain-wrapper/x86_64-apple-ios-clang" \
-CXX="$HOME/.mobile-haskell/toolchain-wrapper/x86_64-apple-ios-clang" \
-        ./configure \
-        --prefix=$HOME/.mobile-haskell/lffi/x86_64-apple-ios \
-        --host=x86_64-apple-ios \
-        --enable-static=yes --enable-shared=yes
-make && make install
+#mkdir -p lffi
+#git clone https://github.com/zw3rk/libffi.git
+#cd libffi
+#./autogen.sh
+#CC="$HOME/.mobile-haskell/toolchain-wrapper/aarch64-apple-ios-clang" \
+#CXX="$HOME/.mobile-haskell/toolchain-wrapper/aarch64-apple-ios-clang" \
+#        ./configure \
+#        --prefix=$HOME/.mobile-haskell/lffi/aarch64-apple-ios \
+#        --host=aarch64-apple-ios \
+#        --enable-static=yes --enable-shared=yes
+#make && make install
+#git clean -f -x -d
+#./autogen.sh
+#CC="$HOME/.mobile-haskell/toolchain-wrapper/x86_64-apple-ios-clang" \
+#CXX="$HOME/.mobile-haskell/toolchain-wrapper/x86_64-apple-ios-clang" \
+#        ./configure \
+#        --prefix=$HOME/.mobile-haskell/lffi/x86_64-apple-ios \
+#        --host=x86_64-apple-ios \
+#        --enable-static=yes --enable-shared=yes
+#make && make install
