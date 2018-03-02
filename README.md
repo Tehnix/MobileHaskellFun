@@ -6,10 +6,10 @@ While you should probably read the blog post, for the impatient and brave, simpl
 
 1. clone down the MobileHaskellFun repository,
 2. run `./setup-tools.sh` to set up the tools,
-2. cd into `Offie/hs-src/`
-3. build the package index `./call x86_64-apple-ios-cabal new-update --allow-newer`,
-4. run `./call make iOS` to compile the program for iOS,
-4. and finally launch Xcode and start the simulator.
+3. cd into `hs-src/`
+4. build the package index `./call x86_64-apple-ios-cabal new-update --allow-newer`,
+5. run `./call make iOS` to compile the program for iOS,
+6. and finally launch Xcode and start the simulator.
 
 You should get a screen like below,
 
