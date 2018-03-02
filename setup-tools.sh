@@ -9,7 +9,7 @@ mkdir -p ~/.mobile-haskell
 # Install cabal HEAD.
 cd ~/.mobile-haskell
 git clone git@github.com:haskell/cabal.git
-cd cabal-install && stack exec --no-ghc-package-path -- ./bootstrap.sh
+cd cabal/cabal-install && stack exec --no-ghc-package-path -- ./bootstrap.sh
 
 # Install LLVM.
 brew install llvm
