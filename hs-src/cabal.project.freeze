@@ -1,0 +1,4 @@
+constraints: any.base ==4.11.0.0,
+             any.ghc-prim ==0.5.2.0,
+             any.integer-simple ==0.1.1.1,
+             any.rts ==1.0
